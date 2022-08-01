@@ -1,9 +1,10 @@
 {
-  "name": "test-app",
+  "name": "next-tailwindcss-template",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "npm run open-browser && next dev",
+    "open-browser": "start http://localhost:3000",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -14,7 +15,10 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.8",
     "eslint": "8.20.0",
-    "eslint-config-next": "12.2.3"
+    "eslint-config-next": "12.2.3",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.7"
   }
 }
